@@ -19,7 +19,7 @@ export default function Gifts() {
   };
 
   return (
-    <section id="gifts" className="py-8" data-aos="fade-up">
+    <section id="gifts" className="py-8 px-6" data-aos="fade-up">
       <h4 className="text-center text-2xl sm:text-3xl font-serif mb-4">Hadiah & Amplop</h4>
 
       <div className="max-w-md mx-auto bg-gray-800 rounded-lg p-6 text-center">

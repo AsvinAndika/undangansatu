@@ -28,3 +28,15 @@
 .animate-fadeInDown {
   animation: fadeInDown 1s cubic-bezier(.4,0,.2,1) both;
 }
+
+@font-face {
+  font-family: "Abuget";
+  src: url("./assets/font/Abuget.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@theme {
+  --font-abuget: "Abuget", sans-serif;
+}

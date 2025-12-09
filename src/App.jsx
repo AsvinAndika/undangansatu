@@ -17,7 +17,14 @@ function App() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="bg-black text-gray-100 antialiased">
+  <div
+  className="text-gray-100 antialiased bg-cover bg-center bg-fixed"
+  style={{
+    backgroundImage: `linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.9)), url('/latarbelakang.jpg')`,
+  }}
+>
+
+
       {!isOpen ? (
         <Opening onOpen={() => setIsOpen(true)} />
       ) : (
@@ -31,6 +38,7 @@ function App() {
             <EventDetails />
             <Countdown />
             <LocationMap />
+            <Gifts/>
             <Gallery />
             <WishesForm />
           </main>

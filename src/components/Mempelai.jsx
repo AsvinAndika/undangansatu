@@ -6,7 +6,6 @@ export default function Mempelai() {
   return (
     <section className="py-12 px-6">
      
-
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
         {/* Mempelai Pria */}
         <div data-aos="fade-up" data-aos-delay="100">
@@ -19,7 +18,7 @@ export default function Mempelai() {
             <div className="absolute inset-0 transition-all duration-500 group-hover:bg-black/30" />
           
           </div>
-            <div className="bottom-0 left-0 text-center right-0 bg-linear-to-t from-black/70 via-black/30 to-transparent px-7 pt-6">
+            <div className="bottom-0 left-0 text-center right-0 px-7 pt-6">
               <h3 className="text-2xl font-serif font-semibold text-white mb-2">I Made Aris</h3>
             </div>
           <p className="text-sm text-center text-gray-300 px-1 md:px-0">
@@ -40,7 +39,7 @@ export default function Mempelai() {
             <div className="absolute inset-0 transition-all duration-500 group-hover:bg-black/30" />
           
           </div>
-            <div className="bottom-0 left-0 text-center right-0 bg-linear-to-t from-black/70 via-black/30 to-transparent px-7 pt-6">
+            <div className="bottom-0 left-0 text-center right-0 px-7 pt-6">
               <h3 className="text-2xl font-serif font-semibold text-white mb-2">Ni Komang Putri</h3>
             </div>
           <p className="text-sm text-center text-gray-300 px-1 md:px-0">

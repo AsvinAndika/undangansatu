@@ -46,7 +46,7 @@ export default function Countdown() {
   ];
 
   return (
-    <section className="py-10 bg-black">
+    <section className="py-10">
 
         <header
       className="relative h-[30vh] bg-cover bg-center flex items-end justify-center"

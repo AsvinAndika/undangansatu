@@ -71,7 +71,7 @@ const GallerySection = ({ ACCENT_COLOR }) => {
     const prev = (e) => { e.stopPropagation(); setOpenIndex((i) => (i - 1 + galleryData.length) % galleryData.length); };
 
     return (
-      <section id="galeri" className="w-full md:max-w-md mx-auto bg-black text-white py-16">
+      <section id="galeri" className="w-full md:max-w-md mx-auto text-white py-16">
       
       {/* --- Header Galeri: MOMENT Bahagia --- */}
       <div className="text-center mb-10 pt-4 pb-8" data-aos="fade-up">

@@ -1,14 +1,43 @@
-import React from 'react'
-import Countdown from "./Countdown";
+import React, { useEffect, useState } from "react";
 
 export default function Hero() {
-  return (
-    <header
-      className="relative h-screen bg-cover bg-center flex items-end justify-center"
-      style={{ backgroundImage: "url('src/assets/images/hero.jpg')" }} // ganti path sesuai
-    >
-      <div className="absolute inset-0 bg-black/50"></div>
+  const images = [
+    "src/assets/images/galerry2.png",
+    "src/assets/images/hero.jpg",
+    "src/assets/images/herotiga.png",
+  ];
 
+  const [index, setIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setIndex((prev) => (prev + 1) % images.length);
+    }, 4000); // 4 detik
+
+    return () => clearInterval(interval);
+  }, []);
+
+  return (
+    <header className="relative h-screen flex items-end justify-center overflow-hidden">
+
+      {/* Background Slideshow */}
+      <div className="absolute inset-0">
+        {images.map((img, i) => (
+          <div
+            key={i}
+            className={`absolute inset-0 bg-cover bg-center transition-opacity duration-1000`}
+            style={{
+              backgroundImage: `url(${img})`,
+              opacity: index === i ? 1 : 0,
+            }}
+          ></div>
+        ))}
+      </div>
+
+      {/* Overlay Gelap */}
+      <div className="absolute inset-0 bg-black/30"></div>
+
+      {/* Isi Konten */}
       <div
         className="relative z-10 text-center px-6 mb-36"
         data-aos="fade-up"
@@ -16,19 +45,15 @@ export default function Hero() {
         data-aos-delay="200"
       >
         <p className="text-sm text-gray-300 mb-2 animate-fadeInDown">Om Swastyastu</p>
-        <h1 className="text-4xl sm:text-5xl font-serif tracking-wide mb-2 animate-fadeInUp">
+
+        <h1 className="text-7xl font-abuget tracking-wide mb-2 animate-fadeInUp">
           Agung & Putri
         </h1>
+
         <p className="mt-3 text-lg text-gray-200 animate-fadeInUp" style={{ animationDelay: "0.4s" }}>
           29 Desember 2025 • Bali
         </p>
       </div>
-
     </header>
-  )
+  );
 }
-
-// Tambahkan di global CSS (misal: src/index.css atau App.css):
-/*
-
-*/

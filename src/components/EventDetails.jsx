@@ -2,7 +2,7 @@ import React from "react";
 
 export default function EventDetails() {
   return (
-    <section className="py-12 px-6 bg-black" data-aos="fade-up">
+    <section className="py-12 px-6" data-aos="fade-up">
       <div className="flex flex-col items-center max-w-xl mx-auto text-center">
 
         {/* Judul */}

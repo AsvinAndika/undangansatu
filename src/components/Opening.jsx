@@ -12,22 +12,24 @@ export default function Opening({ onOpen }) {
 
   return (
     <div
-      className={`min-h-screen flex items-center justify-center bg-cover bg-center relative transition-transform duration-700 ${
+      className={`min-h-screen flex items-end justify-center bg-cover bg-center relative transition-transform duration-700 ${
         slideOut ? "animate-slideOutDown" : ""
       }`}
       style={{ backgroundImage: "url('src/assets/images/hero.jpg')" }} // ganti path jika perlu
       data-aos="zoom-in"
     >
-      <div className="absolute inset-0 bg-black/20" />
+      <div className="absolute inset-0 bg-black/30" />
 
       <div className="relative z-10 text-center px-6 py-12 max-w-lg text-gray-100">
-        <p className="text-sm text-gray-300 tracking-widest mb-2">OM SWASTYASTU</p>
+        <p className="text-sm font-bold text-gray-300 tracking-widest -mb-1">OM SWASTYASTU</p>
+        <img className="w-45 mx-auto mb-[400px]" src="/pawiwahan.png" alt="" />
+      
         <p className="text-sm text-gray-300 uppercase mb-1">The Wedding of</p>
         <h1 className="text-4xl sm:text-5xl font-serif font-semibold leading-tight">
           Aris & Saras
         </h1>
-        <p className="mt-3 text-lg text-gray-300">Senin, 14 April 2025</p>
-        <div className="mt-6">
+        <p className="text-lg text-gray-300">Senin, 14 April 2025</p>
+        <div className="mt-2">
           <p className="text-sm text-gray-300">Kepada Yth</p>
           <h3 className="mt-1 text-xl font-medium">Tamu Undangan</h3>
         </div>
@@ -44,7 +46,7 @@ export default function Opening({ onOpen }) {
             Buka Undangan
           </button>
         </div>
-        <p className="mt-6 text-xs text-gray-400">Ketuk tombol untuk memulai undangan digital</p>
+       
       </div>
     </div>
   );
