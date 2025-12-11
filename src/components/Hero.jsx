@@ -15,7 +15,7 @@ export default function Hero() {
     }, 4000); // 4 detik
 
     return () => clearInterval(interval);
-  }, []);
+  }, [images.length]);
 
   return (
     <header className="relative h-screen flex items-end justify-center overflow-hidden">
